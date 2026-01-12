@@ -1,0 +1,59 @@
+:root{
+  --text:#111;
+  --bg:#ffffff;
+  --muted:#6b7280;
+  --line:#e5e7eb;
+  --card:#f7f7f7;
+  --info-bg:#eef6ff;
+  --info-line:#2b6cb0;
+  --radius:14px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height:1.7;
+}
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+h1{font-size:36px;margin:0 0 10px}
+h2{margin-top:50px;font-size:28px}
+h3{margin-top:30px;font-size:22px}
+p,ul{font-size:18px}
+li{margin-bottom:10px}
+
+.block{
+  background: var(--card);
+  padding: 20px;
+  margin: 28px 0;
+  border-left: 4px solid var(--text);
+  border-radius: var(--radius);
+}
+.practice{
+  background: var(--info-bg);
+  padding: 20px;
+  margin: 28px 0;
+  border-left: 4px solid var(--info-line);
+  border-radius: var(--radius);
+}
+
+.nav{
+  margin-top:60px;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+}
+a{
+  color: var(--text);
+  text-decoration:none;
+  font-weight:bold;
+}
+a:hover{ text-decoration: underline; }
+
+.small{color:var(--muted);font-size:15px}
